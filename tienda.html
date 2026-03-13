@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda | La Consolata</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <div class="nav-links">
+        <a href="index.html">
+          <span class="lang-es">Inicio</span>
+          <span class="lang-en">Home</span>
+        </a>
+        <a href="arte.html">
+          <span class="lang-es">Arte y Espacio</span>
+          <span class="lang-en">Art & Space</span>
+        </a>
+        <a href="menu.html">
+          <span class="lang-es">Menú</span>
+          <span class="lang-en">Menu</span>
+        </a>
+      </div>
+      
+      <div class="logo">
+        <a href="index.html" class="logo-link">
+          <svg width="180" height="80" viewBox="0 0 180 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <text x="50%" y="55%" font-family="'Playfair Display', serif" font-size="28" font-style="italic" fill="#5A3A22" text-anchor="middle">La Consolata</text>
+          </svg>
+        </a>
+      </div>
+      
+      <div class="nav-links right">
+        <a href="tienda.html" style="color: var(--color-accent); font-weight: 600;">
+          <span class="lang-es">Tienda</span>
+          <span class="lang-en">Shop</span>
+        </a>
+        <span class="lang-switch">
+          <button class="btn-lang btn-es active">ES</button> | 
+          <button class="btn-lang btn-en">EN</button>
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main style="padding-top: var(--navbar-height);">
+    <!-- Section: Tienda -->
+    <section id="tienda" class="section">
+      <div class="container">
+        <div class="text-center mb-64 pb-32 border-b border-soft w-full mt-32">
+          <h1 class="h1-title mb-0" style="font-size: 56px;">
+            <span class="lang-es">Tienda</span>
+            <span class="lang-en">Shop</span>
+          </h1>
+          <div class="ornament mt-16 flex justify-center">
+            <svg width="60" height="20" viewBox="0 0 100 20" fill="none" stroke="#D8CFC6" stroke-width="1"><path d="M0 10 Q 25 0, 50 10 T 100 10"></path><path d="M50 0 L 60 10 L 50 20 L 40 10 Z" fill="#D8CFC6"></path></svg>
+          </div>
+        </div>
+        
+        <div class="products-grid grid grid-cols-2 gap-48 mb-64">
+          <!-- Product 1 -->
+          <div class="product-card text-left flex flex-col">
+            <div class="product-image mb-24 overflow-hidden rounded">
+              <img src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?q=80&w=600&auto=format&fit=crop" alt="Café en grano" class="img-fluid w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="product-info flex flex-col flex-grow px-8">
+              <div class="flex justify-between items-baseline mb-8">
+                <h3 class="product-title m-0 text-2xl font-normal font-playfair">
+                  <span class="lang-es">Café en grano</span>
+                  <span class="lang-en">Whole Bean Coffee</span>
+                </h3>
+                <span class="product-price functional-text text-lg">$220</span>
+              </div>
+              <p class="product-weight small-text text-muted mb-24">100g</p>
+              <div class="product-more-info hidden">
+                <p class="small-text text-muted mb-16">
+                  <span class="lang-es">Café de especialidad tostado localmente. Perfecto para disfrutar en casa.</span>
+                  <span class="lang-en">Locally roasted specialty coffee. Perfect to enjoy at home.</span>
+                </p>
+                <div class="bg-cream p-16 rounded mt-16" style="background-color: var(--color-bg);">
+                    <p class="small-text tracking-wide uppercase text-secondary mb-8">
+                        <span class="lang-es">Reserva y recoge en tienda</span>
+                        <span class="lang-en">Reserve and pick up in store</span>
+                    </p>
+                    <a href="https://wa.me/524441234567" target="_blank" class="btn btn-primary w-full text-center flex justify-center" style="width: 100%;">
+                        <span class="lang-es">Contactar por WhatsApp</span>
+                        <span class="lang-en">Contact via WhatsApp</span>
+                    </a>
+                </div>
+              </div>
+              <div class="product-actions mt-auto flex gap-16 pt-16 border-t border-soft" style="margin-top: 24px; padding-top: 24px;">
+                <button class="btn btn-secondary flex-1 btn-ver-mas">
+                  <span class="lang-es">Ver más</span>
+                  <span class="lang-en">View more</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card text-left flex flex-col">
+            <div class="product-image mb-24 overflow-hidden rounded">
+              <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?q=80&w=600&auto=format&fit=crop" alt="Taza de cerámica" class="img-fluid w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="product-info flex flex-col flex-grow px-8">
+              <div class="flex justify-between items-baseline mb-8">
+                <h3 class="product-title m-0 text-2xl font-normal font-playfair">
+                  <span class="lang-es">Taza de cerámica</span>
+                  <span class="lang-en">Ceramic Mug</span>
+                </h3>
+                <span class="product-price functional-text text-lg">$250</span>
+              </div>
+              <div class="product-more-info hidden">
+                <p class="small-text text-muted mb-16">
+                  <span class="lang-es">Un detalle especial que puedes llevarte a casa.</span>
+                  <span class="lang-en">A special detail you can take home.</span>
+                </p>
+                <div class="bg-cream p-16 rounded mt-16" style="background-color: var(--color-bg);">
+                    <p class="small-text tracking-wide uppercase text-secondary mb-8">
+                        <span class="lang-es">Reserva y recoge en tienda</span>
+                        <span class="lang-en">Reserve and pick up in store</span>
+                    </p>
+                    <a href="https://wa.me/524441234567" target="_blank" class="btn btn-primary w-full text-center flex justify-center" style="width: 100%;">
+                        <span class="lang-es">Contactar por WhatsApp</span>
+                        <span class="lang-en">Contact via WhatsApp</span>
+                    </a>
+                </div>
+              </div>
+              <div class="product-actions mt-auto flex gap-16 pt-16 border-t border-soft" style="margin-top: 24px; padding-top: 24px;">
+                <button class="btn btn-secondary flex-1 btn-ver-mas">
+                  <span class="lang-es">Ver más</span>
+                  <span class="lang-en">View more</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card text-left flex flex-col">
+            <div class="product-image mb-24 overflow-hidden rounded">
+              <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=600&auto=format&fit=crop" alt="Lámina artística" class="img-fluid w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="product-info flex flex-col flex-grow px-8">
+              <div class="flex justify-between items-baseline mb-8">
+                <h3 class="product-title m-0 text-2xl font-normal font-playfair">
+                  <span class="lang-es">Lámina artística</span>
+                  <span class="lang-en">Art Print</span>
+                </h3>
+                <span class="product-price functional-text text-lg">$900</span>
+              </div>
+              <div class="product-more-info hidden">
+                <p class="small-text text-muted mb-16">
+                  <span class="lang-es">Una hermosa adición a tu espacio inspirada en nuestra cafetería.</span>
+                  <span class="lang-en">A beautiful addition to your space inspired by our cafe.</span>
+                </p>
+                <div class="bg-cream p-16 rounded mt-16" style="background-color: var(--color-bg);">
+                    <p class="small-text tracking-wide uppercase text-secondary mb-8">
+                        <span class="lang-es">Reserva y recoge en tienda</span>
+                        <span class="lang-en">Reserve and pick up in store</span>
+                    </p>
+                    <a href="https://wa.me/524441234567" target="_blank" class="btn btn-primary w-full text-center flex justify-center" style="width: 100%;">
+                        <span class="lang-es">Contactar por WhatsApp</span>
+                        <span class="lang-en">Contact via WhatsApp</span>
+                    </a>
+                </div>
+              </div>
+              <div class="product-actions mt-auto flex gap-16 pt-16 border-t border-soft" style="margin-top: 24px; padding-top: 24px;">
+                <button class="btn btn-secondary flex-1 btn-ver-mas">
+                  <span class="lang-es">Ver más</span>
+                  <span class="lang-en">View more</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card text-left flex flex-col">
+            <div class="product-image mb-24 overflow-hidden rounded">
+              <img src="https://images.unsplash.com/photo-1499638472904-ea5c6178a300?q=80&w=600&auto=format&fit=crop" alt="Galletas artesanales" class="img-fluid w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="product-info flex flex-col flex-grow px-8">
+              <div class="flex justify-between items-baseline mb-8">
+                <h3 class="product-title m-0 text-2xl font-normal font-playfair">
+                  <span class="lang-es">Galletas artesanales</span>
+                  <span class="lang-en">Artisan Cookies</span>
+                </h3>
+                <span class="product-price functional-text text-lg">$150</span>
+              </div>
+              <div class="product-more-info hidden">
+                <p class="small-text text-muted mb-16">
+                  <span class="lang-es">El acompañante perfecto para tu café.</span>
+                  <span class="lang-en">The perfect companion for your coffee.</span>
+                </p>
+                <div class="bg-cream p-16 rounded mt-16" style="background-color: var(--color-bg);">
+                    <p class="small-text tracking-wide uppercase text-secondary mb-8">
+                        <span class="lang-es">Reserva y recoge en tienda</span>
+                        <span class="lang-en">Reserve and pick up in store</span>
+                    </p>
+                    <a href="https://wa.me/524441234567" target="_blank" class="btn btn-primary w-full text-center flex justify-center" style="width: 100%;">
+                        <span class="lang-es">Contactar por WhatsApp</span>
+                        <span class="lang-en">Contact via WhatsApp</span>
+                    </a>
+                </div>
+              </div>
+              <div class="product-actions mt-auto flex gap-16 pt-16 border-t border-soft" style="margin-top: 24px; padding-top: 24px;">
+                <button class="btn btn-secondary flex-1 btn-ver-mas">
+                  <span class="lang-es">Ver más</span>
+                  <span class="lang-en">View more</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center border-t border-soft pt-32 mb-48">
+          <p class="body-text italic text-secondary mb-16">
+            <span class="lang-es">Llévate un pedacito de La Consolata a casa.</span>
+            <span class="lang-en">Take a little piece of La Consolata home.</span>
+          </p>
+          <div class="ornament flex justify-center">
+            <svg width="60" height="20" viewBox="0 0 100 20" fill="none" stroke="#D8CFC6" stroke-width="1"><path d="M0 10 Q 25 0, 50 10 T 100 10"></path><path d="M50 0 L 60 10 L 50 20 L 40 10 Z" fill="#D8CFC6"></path></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="visitanos" class="footer py-64 mt-auto border-t border-soft" style="margin-top: 120px; text-align: center; padding-top: 64px; padding-bottom: 64px;">
+    <div class="container flex flex-col items-center justify-center gap-24">
+      <div class="footer-logo mb-16">
+        <a href="index.html">
+          <img src="logo.jpeg" alt="La Consolata Logo" class="img-fluid" style="max-height: 140px; margin: 0 auto; object-fit: contain;">
+        </a>
+      </div>
+      
+      <div class="footer-address">
+        <p class="body-text text-primary mb-16 font-playfair" style="font-size: 32px; font-style: italic;">
+          La Consolata
+        </p>
+        <p class="functional-text small-text text-secondary mb-32 uppercase tracking-widest" style="letter-spacing: 2px;">
+          <span class="lang-es">Río 39/8, San Luis Potosí, S.L.P. México</span>
+          <span class="lang-en">Río 39/8, San Luis Potosí, MX</span>
+        </p>
+      </div>
+      
+      <div class="social-links flex gap-24 justify-center">
+        <a href="#" aria-label="Instagram" class="text-primary hover:text-accent transition-colors">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a>
+        <a href="#" aria-label="Facebook" class="text-primary hover:text-accent transition-colors">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
