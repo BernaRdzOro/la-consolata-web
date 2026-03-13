@@ -408,29 +408,53 @@ a:hover {
 /* Mobile */
 @media (max-width: 768px) {
   .container {
-    padding: 0 var(--space-24);
+    padding: 0 var(--space-16);
   }
   
-  h1, .h1 { font-size: 36px; }
+  h1, .h1 { font-size: 38px; }
   h2, .h2 { font-size: 28px; }
   
-  .navbar-container {
-    flex-direction: column;
-    justify-content: center;
-    gap: var(--space-8);
-  }
-  
   .navbar {
+    position: relative; /* Don't fix on small screens so it takes up less space */
     height: auto;
     padding: var(--space-16) 0;
   }
-  
-  .nav-links, .nav-links.right {
-    display: none;
+
+  main {
+      padding-top: 0 !important; /* Override inline style since navbar is now relative */
   }
   
+  .navbar-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-16);
+  }
+  
+  .logo { order: 1; flex-basis: 100%; margin-bottom: 0; }
+  .logo svg { width: 140px; }
+  
+  .nav-links {
+    display: flex; /* Resurrecting the navs */
+    order: 2;
+    flex-basis: 100%;
+    justify-content: center;
+    gap: var(--space-16);
+  }
+  
+  .nav-links.right {
+    display: flex;
+    order: 3;
+    flex-basis: 100%;
+    justify-content: center;
+    gap: var(--space-16);
+    margin-top: 0;
+  }
+  
+  .nav-links a { font-size: 13px; }
+  
   .hero {
-    padding-top: calc(var(--space-96) + 120px);
+    padding-top: var(--space-32);
+    min-height: auto;
   }
   
   .grid-cols-2, .grid-cols-3 { grid-template-columns: 1fr; }
@@ -441,6 +465,21 @@ a:hover {
   
   .hero-actions {
     flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+      width: 100%;
+  }
+  
+  .footer {
+      padding-top: var(--space-48) !important;
+      padding-bottom: var(--space-48) !important;
+      margin-top: var(--space-64) !important;
+  }
+  
+  .footer-logo img {
+      max-height: 100px !important;
   }
 }
 
