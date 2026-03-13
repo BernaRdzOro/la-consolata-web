@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú | La Consolata</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <div class="nav-links">
+        <a href="index.html">
+          <span class="lang-es">Inicio</span>
+          <span class="lang-en">Home</span>
+        </a>
+        <a href="arte.html">
+          <span class="lang-es">Arte y Espacio</span>
+          <span class="lang-en">Art & Space</span>
+        </a>
+        <a href="menu.html" style="color: var(--color-accent); font-weight: 600;">
+          <span class="lang-es">Menú</span>
+          <span class="lang-en">Menu</span>
+        </a>
+      </div>
+      
+      <div class="logo">
+        <a href="index.html" class="logo-link">
+          <svg width="180" height="80" viewBox="0 0 180 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <text x="50%" y="55%" font-family="'Playfair Display', serif" font-size="28" font-style="italic" fill="#5A3A22" text-anchor="middle">La Consolata</text>
+          </svg>
+        </a>
+      </div>
+      
+      <div class="nav-links right">
+        <a href="tienda.html">
+          <span class="lang-es">Tienda</span>
+          <span class="lang-en">Shop</span>
+        </a>
+        <span class="lang-switch">
+          <button class="btn-lang btn-es active">ES</button> | 
+          <button class="btn-lang btn-en">EN</button>
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main style="padding-top: var(--navbar-height);">
+    <!-- Section: Menú -->
+    <section id="menu" class="section">
+      <div class="container">
+        <div class="text-center mb-64 mt-32">
+          <h1 class="h1-title mb-0" style="font-size: 56px;">
+            <span class="lang-es">Menú</span>
+            <span class="lang-en">Menu</span>
+          </h1>
+          <div class="ornament mt-16 flex justify-center">
+            <svg width="60" height="20" viewBox="0 0 100 20" fill="none" stroke="#D8CFC6" stroke-width="1"><path d="M0 10 Q 25 0, 50 10 T 100 10"></path><path d="M50 0 L 60 10 L 50 20 L 40 10 Z" fill="#D8CFC6"></path></svg>
+          </div>
+        </div>
+        
+        <div class="menu-layout grid grid-cols-2 gap-64 w-full mt-32">
+          <div class="menu-categories pr-32">
+            
+            <!-- Category: Bebidas -->
+            <div class="menu-category mb-48">
+              <h3 class="category-title text-center text-secondary tracking-widest text-sm mb-32 bg-cream inline-block px-16 relative z-10 mx-auto" style="display: table; margin: 0 auto 32px; background: var(--color-bg);">
+                <span class="lang-es">BEBIDAS</span>
+                <span class="lang-en">BEVERAGES</span>
+              </h3>
+              <div class="hr-behind" style="height: 1px; background: var(--color-soft); width: 100%; margin-top: -40px; margin-bottom: 40px;"></div>
+              
+              <ul class="menu-list">
+                <li class="menu-item flex justify-between items-baseline mb-16">
+                  <span class="menu-item-name body-text">
+                    <span class="lang-es">Café de olla</span>
+                    <span class="lang-en">Traditional Spiced Coffee</span>
+                  </span>
+                  <span class="menu-dots flex-grow mx-8 border-b border-dotted border-secondary opacity-50 relative top-[-6px]"></span>
+                  <span class="menu-item-price functional-text">$45</span>
+                </li>
+                <li class="menu-item flex justify-between items-baseline mb-16">
+                  <span class="menu-item-name body-text">
+                    <span class="lang-es">Café americano</span>
+                    <span class="lang-en">Americano</span>
+                  </span>
+                  <span class="menu-dots flex-grow mx-8 border-b border-dotted border-secondary opacity-50 relative top-[-6px]"></span>
+                  <span class="menu-item-price functional-text">$40</span>
+                </li>
+                <li class="menu-item flex justify-between items-baseline mb-16">
+                  <span class="menu-item-name body-text">
+                    <span class="lang-es">Capuchino</span>
+                    <span class="lang-en">Cappuccino</span>
+                  </span>
+                  <span class="menu-dots flex-grow mx-8 border-b border-dotted border-secondary opacity-50 relative top-[-6px]"></span>
+                  <span class="menu-item-price functional-text">$55</span>
+                </li>
+                <li class="menu-item flex justify-between items-baseline mb-16">
+                  <span class="menu-item-name body-text">
+                    <span class="lang-es">Latte</span>
+                    <span class="lang-en">Latte</span>
+                  </span>
+                  <span class="menu-dots flex-grow mx-8 border-b border-dotted border-secondary opacity-50 relative top-[-6px]"></span>
+                  <span class="menu-item-price functional-text">$55</span>
+                </li>
+                <li class="menu-item flex justify-between items-baseline mb-16">
+                  <span class="menu-item-name body-text">
+                    <span class="lang-es">Mocaccino</span>
+                    <span class="lang-en">Mocha</span>
+                  </span>
+                  <span class="menu-dots flex-grow mx-8 border-b border-dotted border-secondary opacity-50 relative top-[-6px]"></span>
+                  <span class="menu-item-price functional-text">$60</span>
+                </li>
+                <li class="menu-item flex justify-between items-baseline mb-16">
+                  <span class="menu-item-name body-text">
+                    <span class="lang-es">Espresso</span>
+                    <span class="lang-en">Espresso</span>
+                  </span>
+                  <span class="menu-dots flex-grow mx-8 border-b border-dotted border-secondary opacity-50 relative top-[-6px]"></span>
+                  <span class="menu-item-price functional-text">$45</span>
+                </li>
+                <li class="menu-item flex justify-between items-baseline mb-16">
+                  <span class="menu-item-name body-text">
+                    <span class="lang-es">Té</span>
+                    <span class="lang-en">Tea</span>
+                  </span>
+                  <span class="menu-dots flex-grow mx-8 border-b border-dotted border-secondary opacity-50 relative top-[-6px]"></span>
+                  <span class="menu-item-price functional-text">$40</span>
+                </li>
+                <li class="menu-item flex justify-between items-baseline mb-16">
+                  <span class="menu-item-name body-text">
+                    <span class="lang-es">Chocolate caliente</span>
+                    <span class="lang-en">Hot Chocolate</span>
+                  </span>
+                  <span class="menu-dots flex-grow mx-8 border-b border-dotted border-secondary opacity-50 relative top-[-6px]"></span>
+                  <span class="menu-item-price functional-text">$60</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Category: Desayunos -->
+            <div class="menu-category mb-48 pt-32">
+              <h3 class="category-title text-center text-secondary tracking-widest text-sm mb-32 bg-cream inline-block px-16 relative z-10 mx-auto" style="display: table; margin: 0 auto 32px; background: var(--color-bg);">
+                <span class="lang-es">DESAYUNOS</span>
+                <span class="lang-en">BREAKFAST</span>
+              </h3>
+              <div class="hr-behind" style="height: 1px; background: var(--color-soft); width: 100%; margin-top: -40px; margin-bottom: 40px;"></div>
+              
+              <ul class="menu-list">
+                <li class="menu-item flex justify-between items-baseline mb-16">
+                  <span class="menu-item-name body-text">
+                    <span class="lang-es">Molletes</span>
+                    <span class="lang-en">Molletes</span>
+                  </span>
+                  <span class="menu-dots flex-grow mx-8 border-b border-dotted border-secondary opacity-50 relative top-[-6px]"></span>
+                  <span class="menu-item-price functional-text">$85</span>
+                </li>
+                <li class="menu-item flex justify-between items-baseline mb-16">
+                  <span class="menu-item-name body-text">
+                    <span class="lang-es">Gorditas (orden)</span>
+                    <span class="lang-en">Gorditas (order)</span>
+                  </span>
+                  <span class="menu-dots flex-grow mx-8 border-b border-dotted border-secondary opacity-50 relative top-[-6px]"></span>
+                  <span class="menu-item-price functional-text">$90</span>
+                </li>
+                <li class="menu-item flex justify-between items-baseline mb-16">
+                  <span class="menu-item-name body-text">
+                    <span class="lang-es">Huevos al gusto</span>
+                    <span class="lang-en">Eggs to your liking</span>
+                  </span>
+                  <span class="menu-dots flex-grow mx-8 border-b border-dotted border-secondary opacity-50 relative top-[-6px]"></span>
+                  <span class="menu-item-price functional-text">$95</span>
+                </li>
+                <li class="menu-item flex justify-between items-baseline mb-16">
+                  <span class="menu-item-name body-text">
+                    <span class="lang-es">Chilaquiles</span>
+                    <span class="lang-en">Chilaquiles</span>
+                  </span>
+                  <span class="menu-dots flex-grow mx-8 border-b border-dotted border-secondary opacity-50 relative top-[-6px]"></span>
+                  <span class="menu-item-price functional-text">$110</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Category: Postres -->
+            <div class="menu-category pt-32">
+              <h3 class="category-title text-center text-secondary tracking-widest text-sm mb-32 bg-cream inline-block px-16 relative z-10 mx-auto" style="display: table; margin: 0 auto 32px; background: var(--color-bg);">
+                <span class="lang-es">POSTRES</span>
+                <span class="lang-en">DESSERTS</span>
+              </h3>
+              <div class="hr-behind" style="height: 1px; background: var(--color-soft); width: 100%; margin-top: -40px; margin-bottom: 40px;"></div>
+              
+              <ul class="menu-list">
+                <li class="menu-item flex justify-between items-baseline mb-16">
+                  <span class="menu-item-name body-text">
+                    <span class="lang-es">Campechanas</span>
+                    <span class="lang-en">Campechanas (Pastry)</span>
+                  </span>
+                  <span class="menu-dots flex-grow mx-8 border-b border-dotted border-secondary opacity-50 relative top-[-6px]"></span>
+                  <span class="menu-item-price functional-text">$45</span>
+                </li>
+                <li class="menu-item flex justify-between items-baseline mb-16">
+                  <span class="menu-item-name body-text">
+                    <span class="lang-es">Capirotada de Jalisco</span>
+                    <span class="lang-en">Jalisco Capirotada</span>
+                  </span>
+                  <span class="menu-dots flex-grow mx-8 border-b border-dotted border-secondary opacity-50 relative top-[-6px]"></span>
+                  <span class="menu-item-price functional-text">$65</span>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+          
+          <div class="menu-image self-start sticky top-32">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=800&auto=format&fit=crop" alt="Menú de café y croissant" class="img-fluid w-full rounded shadow-sm object-cover" style="max-height: 800px;">
+          </div>
+        </div>
+        
+        <div class="text-center mt-64 border-t border-soft pt-32 mb-48">
+          <p class="body-text italic text-secondary mb-16">
+            <span class="lang-es">Tradición y sabor que reconfortan el alma.</span>
+            <span class="lang-en">Tradition and flavor that comfort the soul.</span>
+          </p>
+          <div class="ornament flex justify-center">
+            <svg width="60" height="20" viewBox="0 0 100 20" fill="none" stroke="#D8CFC6" stroke-width="1"><path d="M0 10 Q 25 0, 50 10 T 100 10"></path><path d="M50 0 L 60 10 L 50 20 L 40 10 Z" fill="#D8CFC6"></path></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="visitanos" class="footer py-64 mt-auto border-t border-soft" style="margin-top: 120px; text-align: center; padding-top: 64px; padding-bottom: 64px;">
+    <div class="container flex flex-col items-center justify-center gap-24">
+      <div class="footer-logo mb-16">
+        <a href="index.html">
+          <img src="logo.jpeg" alt="La Consolata Logo" class="img-fluid" style="max-height: 140px; margin: 0 auto; object-fit: contain;">
+        </a>
+      </div>
+      
+      <div class="footer-address">
+        <p class="body-text text-primary mb-16 font-playfair" style="font-size: 32px; font-style: italic;">
+          La Consolata
+        </p>
+        <p class="functional-text small-text text-secondary mb-32 uppercase tracking-widest" style="letter-spacing: 2px;">
+          <span class="lang-es">Río 39/8, San Luis Potosí, S.L.P. México</span>
+          <span class="lang-en">Río 39/8, San Luis Potosí, MX</span>
+        </p>
+      </div>
+      
+      <div class="social-links flex gap-24 justify-center">
+        <a href="#" aria-label="Instagram" class="text-primary hover:text-accent transition-colors">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a>
+        <a href="#" aria-label="Facebook" class="text-primary hover:text-accent transition-colors">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
