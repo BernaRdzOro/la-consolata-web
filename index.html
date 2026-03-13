@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Consolata | Café & Arte</title>
+  
+  <!-- Google Fonts: Playfair Display (Titles), Cormorant Garamond (Body), Inter (Functional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <div class="nav-links">
+        <a href="index.html" style="color: var(--color-accent); font-weight: 600;">
+          <span class="lang-es">Inicio</span>
+          <span class="lang-en">Home</span>
+        </a>
+        <a href="arte.html">
+          <span class="lang-es">Arte y Espacio</span>
+          <span class="lang-en">Art & Space</span>
+        </a>
+        <a href="menu.html">
+          <span class="lang-es">Menú</span>
+          <span class="lang-en">Menu</span>
+        </a>
+      </div>
+      
+      <div class="logo">
+        <a href="index.html" class="logo-link">
+          <svg width="180" height="80" viewBox="0 0 180 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <text x="50%" y="55%" font-family="'Playfair Display', serif" font-size="28" font-style="italic" fill="#5A3A22" text-anchor="middle">La Consolata</text>
+          </svg>
+        </a>
+      </div>
+      
+      <div class="nav-links right">
+        <a href="tienda.html">
+          <span class="lang-es">Tienda</span>
+          <span class="lang-en">Shop</span>
+        </a>
+        <span class="lang-switch">
+          <button class="btn-lang btn-es active">ES</button> | 
+          <button class="btn-lang btn-en">EN</button>
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Section: Inicio (Hero) -->
+    <section id="inicio" class="section hero">
+      <div class="container text-center">
+        <div class="hero-content">
+          <h1>
+            <span class="lang-es">Donde el café<br>se encuentra con el arte.</span>
+            <span class="lang-en">Where coffee<br>meets art.</span>
+          </h1>
+          <div class="hero-actions mt-32">
+            <a href="menu.html" class="btn btn-secondary">
+              <span class="lang-es">Ver Menú</span>
+              <span class="lang-en">View Menu</span>
+            </a>
+          </div>
+        </div>
+        
+        <div class="location-banner mt-64">
+          <p class="small-text tracking-wide uppercase text-secondary">San Luis Potosí, S.L.P. México</p>
+        </div>
+        
+        <div class="history-block mt-96 grid grid-cols-2 gap-48 items-center">
+          <div class="history-text text-left">
+            <h2 class="mb-24 h2-title" style="font-family: 'Playfair Display', serif; font-style: italic;">
+              <span class="lang-es">Nuestra historia</span>
+              <span class="lang-en">Our story</span>
+            </h2>
+            <p class="body-text text-muted mb-32">
+              <span class="lang-es">Inspirado en Italia y en el espíritu de calma y contemplación de su catedral más antigua, La Consolata de Turín, nace nuestro café como un refugio donde el café premium y el arte coexisten en armonía.</span>
+              <span class="lang-en">Inspired by Italy and the spirit of calm and contemplation of its oldest cathedral, La Consolata in Turin, our cafe was born as a refuge where premium coffee and art coexist in harmony.</span>
+            </p>
+            <div class="social-links flex gap-16">
+              <a href="#" aria-label="Instagram" class="icon-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              </a>
+              <a href="#" aria-label="Facebook" class="icon-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              </a>
+            </div>
+          </div>
+          <div class="history-image">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=800&auto=format&fit=crop" alt="Entrada de La Consolata" class="img-fluid rounded">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="visitanos" class="footer py-64 mt-auto border-t border-soft" style="margin-top: 120px; text-align: center; padding-top: 64px; padding-bottom: 64px;">
+    <div class="container flex flex-col items-center justify-center gap-24">
+      <div class="footer-logo mb-16">
+        <a href="index.html">
+          <img src="logo.jpeg" alt="La Consolata Logo" class="img-fluid" style="max-height: 140px; margin: 0 auto; object-fit: contain;">
+        </a>
+      </div>
+      
+      <div class="footer-address">
+        <p class="body-text text-primary mb-16 font-playfair" style="font-size: 32px; font-style: italic;">
+          La Consolata
+        </p>
+        <p class="functional-text small-text text-secondary mb-32 uppercase tracking-widest" style="letter-spacing: 2px;">
+          <span class="lang-es">Río 39/8, San Luis Potosí, S.L.P. México</span>
+          <span class="lang-en">Río 39/8, San Luis Potosí, MX</span>
+        </p>
+      </div>
+      
+      <div class="social-links flex gap-24 justify-center">
+        <a href="#" aria-label="Instagram" class="text-primary hover:text-accent transition-colors">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a>
+        <a href="#" aria-label="Facebook" class="text-primary hover:text-accent transition-colors">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
